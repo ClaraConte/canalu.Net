@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace canalu.Models
 {
-    public class Users
+    public class UsersAddress
     {
         [Display(Name = "Código")]
         [Key]
@@ -14,6 +13,10 @@ namespace canalu.Models
         [Display(Name = "Apellido")]
         public string UsersLastName { get; set; }
         [Display(Name = "DNI (DU)")]
+
+
+        public Address Addres { get; set; }
+
         public long UsersDni { get; set; }
         [Display(Name = "Teléfono")]
         public string UsersPhone { get; set; }
@@ -21,10 +24,5 @@ namespace canalu.Models
         public string UsersEmail { get; set; }
         [Display(Name = "Fecha nacimento")]
         public DateTime UsersBirthDay { get; set; }
-        [Display(Name = "Domicilio")]
-        public  List<Address> address { get; set; }
-        [Display(Name = "Empleado")]
-        public virtual Employees Employees { get; set; }
-
     }
 }

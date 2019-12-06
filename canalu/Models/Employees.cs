@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace canalu.Models
 {
@@ -19,7 +16,7 @@ namespace canalu.Models
 
         [Display(Name = "Usuario")]
         [ForeignKey("IdUsers")]
-        public  Users users{ get; set; }
+        public Users users { get; set; }
 
         public int IdUsersRoles { get; set; }
         [Display(Name = "Rol")]

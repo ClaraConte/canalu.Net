@@ -16,7 +16,6 @@ namespace canalu.Models
         public DbSet<Provinces> Provinces { get; set; }
         public DbSet<Locations> Locations { get; set; }
         public DbSet<Address> Address { get; set; }
-
-
+        public DbSet<Commerces> Commerces { get; set; }
     }
 }
