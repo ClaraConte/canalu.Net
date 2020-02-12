@@ -10,13 +10,13 @@ namespace canalu.Models
         [Key]
         public int IdEmployees { get; set; }
         public string EmployeesUserName { get; set; }
+        [RequiredAttribute]
         public string EmployeesKey { get; set; }
         public Boolean EmployeesStatus { get; set; }
-        public int IdUsers { get; set; }
 
         [Display(Name = "Usuario")]
         [ForeignKey("IdUsers")]
-        public Users users { get; set; }
+        public int IdUsers { get; set; }
 
         public int IdUsersRoles { get; set; }
         [Display(Name = "Rol")]

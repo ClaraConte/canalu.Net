@@ -1,0 +1,2 @@
+C:\Users\clara\source\repos\canalu.Net\obj\x86\Debug\test.csprojAssemblyReference.cache
+C:\Users\clara\source\repos\canalu.Net\obj\x86\Debug\test.csproj.CoreCompileInputs.cache

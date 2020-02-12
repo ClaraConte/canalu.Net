@@ -11,8 +11,5 @@ namespace canalu.Models
         public string CommercesName { get; set; }
         public string CommercesRS { get; set; }
 
-        [ForeignKey("IdAddress")]
-        public int IdAddress { get; set; }
-
     }
 }

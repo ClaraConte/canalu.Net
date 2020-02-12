@@ -22,7 +22,7 @@ namespace canalu.Models
         [Display(Name = "Fecha nacimento")]
         public DateTime UsersBirthDay { get; set; }
         [Display(Name = "Domicilio")]
-        public  List<Address> address { get; set; }
+        public ICollection<Address> address { get; set; }
         [Display(Name = "Empleado")]
         public virtual Employees Employees { get; set; }
 

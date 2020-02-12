@@ -43,9 +43,23 @@ namespace canalu.Controllers
                 // Leftjoin de user con 
                 // return Ok(contexto.Inmuebles.Include(e => e.Duenio).Where(e => e.Duenio.Email == usuario).Single(e => e.Id == id));
 
-                //return Ok(contexto.Users.Include(e => e.Address).Include(f => f.Employees).Single(e => e.IdUsers == id));
+                //return Ok(contexto.Entry<Users>.Reference(e => e.address).Load());
+                //context.Entry(course).Reference(c => c.Department).Load();
+                //Usuario con direcciones
+                //contexto.Users.Include(e => e.address).Where(e => e.IdUsers == id).First()
 
-                return Ok(contexto.Users.Include(e => e.address).Where(e => e.IdUsers == id));
+
+                // Devuelve usuario con direcciones, localidad, provincia, comercio y datos de empleado 
+                /* return Ok(contexto.Users.Include(direccion => direccion.address).ThenInclude(localidaYprovincia => localidaYprovincia.locations.provinces)
+                                        .Include(direccion => direccion.address).ThenInclude(comercio => comercio.Commerces)
+                                        .Include(empleado => empleado.Employees).
+                                         FirstOrDefault(us => us.IdUsers ==  id));*/
+
+
+                return Ok(contexto.Users.Include(direccion => direccion.address).ThenInclude(localidaYprovincia => localidaYprovincia.locations.provinces)
+                                        .Include(empleado => empleado.Employees).
+                                         FirstOrDefault(us => us.IdUsers == id));
+
                 //return Ok(contexto.Commerces);
             }
             catch (Exception ex)
@@ -63,11 +77,11 @@ namespace canalu.Controllers
                 // Leftjoin de user sin empleados
                 var query = from users in contexto.Users.Include(e => e.address)
 
-                            join employees in contexto.Employees on users.IdUsers equals employees.IdEmployees into myJoinedTable
+                    join employees in contexto.Employees on users.IdUsers equals employees.IdEmployees into myJoinedTable
 
-                            from leftJoin in myJoinedTable.DefaultIfEmpty()
-                            where leftJoin.IdEmployees == null
-                            select users;
+                    from leftJoin in myJoinedTable.DefaultIfEmpty()
+                    where leftJoin.IdEmployees == null
+                    select users;
 
                 return Ok(query);
             }
@@ -142,9 +156,40 @@ namespace canalu.Controllers
         }
 
         // PUT api/<controller>/5
+      
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> Put(int id, Users usuario)
         {
+            try
+            {
+                if (usuario == null)
+                {
+                    return BadRequest("Owner object is null");
+                }
+                if (ModelState.IsValid && contexto.Users.AsNoTracking().Include(e => e.Employees).FirstOrDefault(e => e.IdUsers == usuario.IdUsers && e.Employees != null) != null)
+                {
+
+                    string hashed = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+                        password: usuario.Employees.EmployeesKey,
+                        salt: System.Text.Encoding.ASCII.GetBytes(config["Salt"]),
+                        prf: KeyDerivationPrf.HMACSHA1,
+                        iterationCount: 1000,
+                        numBytesRequested: 256 / 8));
+
+                    usuario.Employees.EmployeesKey = hashed;
+                    contexto.Users.Update(usuario);
+                    contexto.SaveChanges();
+                    return Ok(usuario);
+                }
+                return BadRequest();
+            }
+            catch (Exception e)
+            {
+                if (e.Source != null)
+                    Console.WriteLine("IOException source: {0}", e.Source);
+                throw;
+                return BadRequest(e);
+            }
         }
 
         // DELETE api/<controller>/5

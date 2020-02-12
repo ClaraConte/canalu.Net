@@ -1,0 +1,186 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{98F7BC5B-C9D1-42FB-96F0-4D381D603D48}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>test</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\pack\pack-cc133f1870ebd3b0cc1f7523fc19e34b2bd1a46f.idx" />
+    <None Include=".git\objects\pack\pack-cc133f1870ebd3b0cc1f7523fc19e34b2bd1a46f.pack" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".vs\canalu.Net\v16\.suo" />
+    <None Include=".vs\canalu\config\applicationhost.config" />
+    <None Include=".vs\canalu\DesignTimeBuild\.dtbcache" />
+    <None Include=".vs\canalu\v16\.suo" />
+    <None Include=".vs\canalu\v16\Server\sqlite3\db.lock" />
+    <None Include=".vs\canalu\v16\Server\sqlite3\storage.ide" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="canalu\.config\dotnet-tools.json" />
+    <None Include="canalu\appsettings.Development.json" />
+    <None Include="canalu\appsettings.json" />
+    <None Include="canalu\bin\Debug\netcoreapp2.2\appsettings.Development.json" />
+    <None Include="canalu\bin\Debug\netcoreapp2.2\appsettings.json" />
+    <None Include="canalu\bin\Debug\netcoreapp2.2\canalu.deps.json" />
+    <None Include="canalu\bin\Debug\netcoreapp2.2\canalu.runtimeconfig.dev.json" />
+    <None Include="canalu\bin\Debug\netcoreapp2.2\canalu.runtimeconfig.json" />
+    <None Include="canalu\bin\Debug\netcoreapp2.2\Properties\launchSettings.json" />
+    <None Include="canalu\bin\Release\netcoreapp2.2\appsettings.Development.json" />
+    <None Include="canalu\bin\Release\netcoreapp2.2\appsettings.json" />
+    <None Include="canalu\bin\Release\netcoreapp2.2\canalu.deps.json" />
+    <None Include="canalu\bin\Release\netcoreapp2.2\canalu.runtimeconfig.dev.json" />
+    <None Include="canalu\bin\Release\netcoreapp2.2\canalu.runtimeconfig.json" />
+    <None Include="canalu\bin\Release\netcoreapp2.2\Properties\launchSettings.json" />
+    <None Include="canalu\canalu.csproj" />
+    <None Include="canalu\Data\Data.rar" />
+    <None Include="canalu\obj\canalu.csproj.EntityFrameworkCore.targets" />
+    <None Include="canalu\obj\canalu.csproj.nuget.cache" />
+    <None Include="canalu\obj\canalu.csproj.nuget.dgspec.json" />
+    <None Include="canalu\obj\canalu.csproj.nuget.g.props" />
+    <None Include="canalu\obj\canalu.csproj.nuget.g.targets" />
+    <None Include="canalu\obj\Debug\netcoreapp2.2\canalu.AssemblyInfoInputs.cache" />
+    <None Include="canalu\obj\Debug\netcoreapp2.2\canalu.assets.cache" />
+    <None Include="canalu\obj\Debug\netcoreapp2.2\canalu.csprojAssemblyReference.cache" />
+    <None Include="canalu\obj\Debug\netcoreapp2.2\canalu.RazorAssemblyInfo.cache" />
+    <None Include="canalu\obj\Debug\netcoreapp2.2\canalu.RazorTargetAssemblyInfo.cache" />
+    <None Include="canalu\obj\Debug\netcoreapp2.2\PubTmp\TestProfilesForFilePreview\canalu - Web Deploy.pubxml" />
+    <None Include="canalu\obj\Debug\netcoreapp3.0\canalu.AssemblyInfoInputs.cache" />
+    <None Include="canalu\obj\Debug\netcoreapp3.0\canalu.assets.cache" />
+    <None Include="canalu\obj\Debug\netcoreapp3.0\canalu.csprojAssemblyReference.cache" />
+    <None Include="canalu\obj\Debug\netcoreapp3.0\canalu.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="canalu\obj\Debug\netcoreapp3.1\canalu.AssemblyInfoInputs.cache" />
+    <None Include="canalu\obj\Debug\netcoreapp3.1\canalu.assets.cache" />
+    <None Include="canalu\obj\Debug\netcoreapp3.1\canalu.csprojAssemblyReference.cache" />
+    <None Include="canalu\obj\Debug\netcoreapp3.1\canalu.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="canalu\obj\project.assets.json" />
+    <None Include="canalu\obj\Release\netcoreapp2.2\canalu.AssemblyInfoInputs.cache" />
+    <None Include="canalu\obj\Release\netcoreapp2.2\canalu.assets.cache" />
+    <None Include="canalu\obj\Release\netcoreapp2.2\canalu.csprojAssemblyReference.cache" />
+    <None Include="canalu\obj\Release\netcoreapp2.2\canalu.RazorAssemblyInfo.cache" />
+    <None Include="canalu\obj\Release\netcoreapp2.2\canalu.RazorTargetAssemblyInfo.cache" />
+    <None Include="canalu\obj\Release\netcoreapp2.2\PubTmp\Out\appsettings.Development.json" />
+    <None Include="canalu\obj\Release\netcoreapp2.2\PubTmp\Out\appsettings.json" />
+    <None Include="canalu\obj\Release\netcoreapp2.2\PubTmp\Out\canalu.deps.json" />
+    <None Include="canalu\obj\Release\netcoreapp2.2\PubTmp\Out\canalu.runtimeconfig.json" />
+    <None Include="canalu\obj\Release\netcoreapp2.2\PubTmp\Out\web.config" />
+    <None Include="canalu\Properties\launchSettings.json" />
+    <None Include="canalu\Properties\PublishProfiles\canalu - Web Deploy.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="canalu\bin\Debug\netcoreapp2.2\canalu.dll" />
+    <Content Include="canalu\bin\Debug\netcoreapp2.2\canalu.pdb" />
+    <Content Include="canalu\bin\Release\netcoreapp2.2\canalu.dll" />
+    <Content Include="canalu\bin\Release\netcoreapp2.2\canalu.pdb" />
+    <Content Include="canalu\canalu.csproj.user" />
+    <Content Include="canalu\obj\Debug\netcoreapp2.2\canalu.csproj.FileListAbsolute.txt" />
+    <Content Include="canalu\obj\Debug\netcoreapp2.2\canalu.dll" />
+    <Content Include="canalu\obj\Debug\netcoreapp2.2\canalu.pdb" />
+    <Content Include="canalu\obj\Debug\netcoreapp3.0\canalu.csproj.FileListAbsolute.txt" />
+    <Content Include="canalu\obj\Debug\netcoreapp3.1\canalu.csproj.FileListAbsolute.txt" />
+    <Content Include="canalu\obj\Release\netcoreapp2.2\canalu.csproj.FileListAbsolute.txt" />
+    <Content Include="canalu\obj\Release\netcoreapp2.2\canalu.dll" />
+    <Content Include="canalu\obj\Release\netcoreapp2.2\canalu.pdb" />
+    <Content Include="canalu\obj\Release\netcoreapp2.2\PubTmp\canalu.Parameters.xml" />
+    <Content Include="canalu\obj\Release\netcoreapp2.2\PubTmp\canalu.SourceManifest.xml" />
+    <Content Include="canalu\obj\Release\netcoreapp2.2\PubTmp\Out\canalu.dll" />
+    <Content Include="canalu\obj\Release\netcoreapp2.2\PubTmp\Out\canalu.pdb" />
+    <Content Include="canalu\obj\Release\netcoreapp2.2\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <Content Include="canalu\obj\Release\netcoreapp2.2\PubTmp\Out\Microsoft.EntityFrameworkCore.dll" />
+    <Content Include="canalu\obj\Release\netcoreapp2.2\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <Content Include="canalu\obj\Release\netcoreapp2.2\PubTmp\Out\Microsoft.EntityFrameworkCore.SqlServer.dll" />
+    <Content Include="canalu\obj\Release\netcoreapp2.2\PubTmp\Out\Remotion.Linq.dll" />
+    <Content Include="canalu\obj\Release\netcoreapp2.2\PubTmp\Out\System.Interactive.Async.dll" />
+    <Content Include="canalu\Properties\PublishProfiles\canalu - Web Deploy.pubxml.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="canalu\Controllers\UsersController.cs" />
+    <Compile Include="canalu\Models\Address.cs" />
+    <Compile Include="canalu\Models\Commerces.cs" />
+    <Compile Include="canalu\Models\DataContext.cs" />
+    <Compile Include="canalu\Models\Employees.cs" />
+    <Compile Include="canalu\Models\Locations.cs" />
+    <Compile Include="canalu\Models\LoginView.cs" />
+    <Compile Include="canalu\Models\Provinces.cs" />
+    <Compile Include="canalu\Models\RolesActions.cs" />
+    <Compile Include="canalu\Models\Users.cs" />
+    <Compile Include="canalu\Models\UsersAddress.cs" />
+    <Compile Include="canalu\Models\UsersRoles.cs" />
+    <Compile Include="canalu\obj\Debug\netcoreapp2.2\canalu.AssemblyInfo.cs" />
+    <Compile Include="canalu\obj\Debug\netcoreapp2.2\canalu.RazorAssemblyInfo.cs" />
+    <Compile Include="canalu\obj\Debug\netcoreapp3.0\canalu.AssemblyInfo.cs" />
+    <Compile Include="canalu\obj\Debug\netcoreapp3.1\canalu.AssemblyInfo.cs" />
+    <Compile Include="canalu\obj\Release\netcoreapp2.2\canalu.AssemblyInfo.cs" />
+    <Compile Include="canalu\obj\Release\netcoreapp2.2\canalu.RazorAssemblyInfo.cs" />
+    <Compile Include="canalu\Program.cs" />
+    <Compile Include="canalu\Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\test\v15\" />
+    <Folder Include="canalu\bin\Debug\netcoreapp3.0\" />
+    <Folder Include="canalu\bin\Debug\netcoreapp3.1\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

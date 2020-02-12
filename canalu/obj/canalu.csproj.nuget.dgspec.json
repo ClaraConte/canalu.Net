@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Clara Conte\\source\\repos\\canalu\\canalu\\canalu.csproj": {}
+    "C:\\Users\\clara\\source\\repos\\canalu.Net\\canalu\\canalu.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Clara Conte\\source\\repos\\canalu\\canalu\\canalu.csproj": {
+    "C:\\Users\\clara\\source\\repos\\canalu.Net\\canalu\\canalu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Clara Conte\\source\\repos\\canalu\\canalu\\canalu.csproj",
+        "projectUniqueName": "C:\\Users\\clara\\source\\repos\\canalu.Net\\canalu\\canalu.csproj",
         "projectName": "canalu",
-        "projectPath": "C:\\Users\\Clara Conte\\source\\repos\\canalu\\canalu\\canalu.csproj",
-        "packagesPath": "C:\\Users\\Clara Conte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Clara Conte\\source\\repos\\canalu\\canalu\\obj\\",
+        "projectPath": "C:\\Users\\clara\\source\\repos\\canalu.Net\\canalu\\canalu.csproj",
+        "packagesPath": "C:\\Users\\clara\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\clara\\source\\repos\\canalu.Net\\canalu\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Clara Conte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\clara\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,6 +52,10 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "Microsoft.AspNetCore.Server.IISIntegration": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[2.2.1, )"
@@ -70,7 +77,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

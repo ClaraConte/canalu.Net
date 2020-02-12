@@ -1,0 +1,4 @@
+C:\Users\clara\source\repos\canalu.Net\canalu\obj\Debug\netcoreapp3.0\canalu.csprojAssemblyReference.cache
+C:\Users\clara\source\repos\canalu.Net\canalu\obj\Debug\netcoreapp3.0\canalu.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\clara\source\repos\canalu.Net\canalu\obj\Debug\netcoreapp3.0\canalu.AssemblyInfoInputs.cache
+C:\Users\clara\source\repos\canalu.Net\canalu\obj\Debug\netcoreapp3.0\canalu.AssemblyInfo.cs

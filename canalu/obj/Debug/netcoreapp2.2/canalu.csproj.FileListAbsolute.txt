@@ -14,3 +14,19 @@ C:\Users\Clara Conte\source\repos\canalu\canalu\obj\Debug\netcoreapp2.2\canalu.R
 C:\Users\Clara Conte\source\repos\canalu\canalu\obj\Debug\netcoreapp2.2\canalu.dll
 C:\Users\Clara Conte\source\repos\canalu\canalu\obj\Debug\netcoreapp2.2\canalu.pdb
 C:\Users\Clara Conte\source\repos\canalu\canalu\obj\Debug\netcoreapp2.2\canalu.csprojAssemblyReference.cache
+C:\Users\clara\Source\Repos\canalu.Net\canalu\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\clara\Source\Repos\canalu.Net\canalu\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\clara\Source\Repos\canalu.Net\canalu\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\clara\Source\Repos\canalu.Net\canalu\bin\Debug\netcoreapp2.2\canalu.deps.json
+C:\Users\clara\Source\Repos\canalu.Net\canalu\bin\Debug\netcoreapp2.2\canalu.runtimeconfig.json
+C:\Users\clara\Source\Repos\canalu.Net\canalu\bin\Debug\netcoreapp2.2\canalu.runtimeconfig.dev.json
+C:\Users\clara\Source\Repos\canalu.Net\canalu\bin\Debug\netcoreapp2.2\canalu.dll
+C:\Users\clara\Source\Repos\canalu.Net\canalu\bin\Debug\netcoreapp2.2\canalu.pdb
+C:\Users\clara\Source\Repos\canalu.Net\canalu\obj\Debug\netcoreapp2.2\canalu.RazorAssemblyInfo.cache
+C:\Users\clara\Source\Repos\canalu.Net\canalu\obj\Debug\netcoreapp2.2\canalu.RazorAssemblyInfo.cs
+C:\Users\clara\Source\Repos\canalu.Net\canalu\obj\Debug\netcoreapp2.2\canalu.AssemblyInfoInputs.cache
+C:\Users\clara\Source\Repos\canalu.Net\canalu\obj\Debug\netcoreapp2.2\canalu.AssemblyInfo.cs
+C:\Users\clara\Source\Repos\canalu.Net\canalu\obj\Debug\netcoreapp2.2\canalu.RazorTargetAssemblyInfo.cache
+C:\Users\clara\Source\Repos\canalu.Net\canalu\obj\Debug\netcoreapp2.2\canalu.dll
+C:\Users\clara\Source\Repos\canalu.Net\canalu\obj\Debug\netcoreapp2.2\canalu.pdb
+C:\Users\clara\source\repos\canalu.Net\canalu\obj\Debug\netcoreapp2.2\canalu.csprojAssemblyReference.cache

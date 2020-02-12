@@ -20,10 +20,16 @@ namespace canalu.Models
         [Display(Name = "Usuario")]
         [ForeignKey("IdUsers")]
         public int IdUsers { get; set; }
+
         public int IdAddressType { get; set; }
         public string AddressObservations { get; set; }
-        public virtual Commerces Commerces { get; set; }
+
+        [ForeignKey("IdLocations")]
         public int IdLocations { get; set; }
         public Locations locations { get; set; }
+
+        [ForeignKey("IdCommerces")]
+        public int IdCommerces { get; set; }
+        public virtual Commerces Commerces { get; set; }
     }
 }
